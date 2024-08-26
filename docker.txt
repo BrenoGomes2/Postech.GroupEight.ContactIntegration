@@ -1,0 +1,14 @@
+docker pull mongo
+docker run --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=fiap -e MONGO_INITDB_ROOT_PASSWORD=fiap123456 mongo
+
+connection string
+mongodb://fiap:fiap123456@localhost:27017/admin
+
+
+
+
+RABBITMQ	
+docker pull rabbitmq
+$ docker run -d --hostname fiap-rabbit --name rabbit -p 8080:15672 rabbitmq:3-management
+username: guest
+password: guest
